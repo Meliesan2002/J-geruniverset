@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyheds Karusel</title>
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+      /* PIL-STYLE */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    background-color: transparent !important;
+    opacity: 0.4;
+    border: none !important;
+    box-shadow: none !important;
+    transition: opacity 0.3s ease;
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: transparent !important;
+    opacity: 1 !important;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 100% 100%;
+    filter: brightness(0%) contrast(100%);
+    width: 50px;
+    height: 50px;
+  }
+
+  .carousel .card img {
+    object-fit: cover;
+    height: 250px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-family: lato;
+  }
+
+   @media (max-width: 576px) {
+    .card {
+      margin-bottom: 1rem;
+    }
+  }
+  </style>
+</head>
+<body>
+
+<section class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-4"></h3>
+
+    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+       <div class="carousel-item active">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+      <div class="card">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/jake-forsher-aT0CjGRHbew-unsplash-scaled.webp" class="card-img-top" alt="Nyhed 1">
+                <div class="card-body">
+                  <h5 class="card-title">5 fejl nye jægere ofte begår – og sådan undgår du dem</h5>
+                  <p class="card-text">Som ny jæger åbner jagtverdenen op for mange spændende muligheder – fra store naturoplevelser til følelsen af ansvar og fordybelse. Men det kan også være en udfordrende start, og mange begår de samme fejl...</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+
+          
+        <div class="carousel-item">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+      <div class="card">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/Screenshot-2025-05-11-at-23.11.52-e1747398662669.webp" class="card-img-top" alt="Nyhed 2">
+                <div class="card-body">
+                  <h5 class="card-title">Min første jagtoplevelse og hvilket grej jeg havde med</h5>
+                  <p class="card-text">I samarbejde med Korsholm har vi lavet et spændende interview med deres medarbejdere, som delte deres første jagtoplevelser. I videoen  fortæller de om, hvordan det var at komme ud...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+       <div class="carousel-item">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+      <div class="card">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/gregory-halle-petiot-ZPwRT-QAsHw-unsplash-2-scaled.webp" class="card-img-top" alt="Nyhed 3">
+                <div class="card-body">
+                  <h5 class="card-title">Alt om bukkejagt i maj – grej, tips og etik</h5>
+                  <p class="card-text">Bukkejagten i maj er for mange jægere et af årets absolutte højdepunkter. Når solen står tidligt op, og naturen eksploderer i grønne nuancer, er det tid til en af de mest traditionsrige jagtformer i Danmark...</p>
+                 </div>
+              </div>
+            </div>
+            </div>
+            </div>
+
+ <div class="carousel-item">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+      <div class="card">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/aleksey-kuzmichev-jUdUBop64qY-unsplash-scaled.webp" class="card-img-top" alt="Nyhed 4">
+                <div class="card-body">
+                  <h5 class="card-title">Hvad skal du bruge til jagt på rågeunger?</h5>
+                  <p class="card-text">Når det kommer til jagt, er valget af ammunition lige så vigtigt som valget af våben...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+         <div class="carousel-item">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+      <div class="card">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/bennie-bates-x1Mj96G7qrM-unsplash-scaled.webp" class="card-img-top" alt="Nyhed 3">
+                <div class="card-body">
+                  <h5 class="card-title">Ammunitionstyper – hvad skal du vælge til din jagtform?</h5>
+                  <p class="card-text">Når det kommer til jagt, er valget af ammunition lige så vigtigt som valget af våben...</p>
+                  </div>
+              </div>
+            </div>
+            </div>
+            </div>
+
+             <div class="carousel-item">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+      <div class="card">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/cole-miller-d5drj_55oQo-unsplash-2-scaled-e1747402632382.webp" class="card-img-top" alt="Nyhed 4">
+                <div class="card-body">
+                  <h5 class="card-title">De 5 bedste riffelkikkerter til under 3000 kr – Kvalitet til budgetbevidste jægere</h5>
+                  <p class="card-text">En god riffelkikkert er en uundværlig del af enhver jægers udrustning. Den forbedrer din præcision, forlænger dine effektive...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pile -->
+      <button class="carousel-control-prev" role="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Forrige</span>
+      </button>
+      <button class="carousel-control-next" rolee="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Næste</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
