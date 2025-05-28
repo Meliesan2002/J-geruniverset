@@ -3,101 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mobil Karusel</title>
+  <title>Nyheds Karusel (JS Klik)</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    @media (min-width: 577px) {
-      #mobileProductCarousel {
-        display: none !important;
-      }
-    }
-
-    .product-slide {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-    }
-
-    .product-card {
-      flex: 1;
-      text-align: center;
-      background: #f9f9f9;
-      padding: 10px;
-      border-radius: 8px;
-    }
-
-    .product-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-
     .carousel-control-prev,
     .carousel-control-next {
-      background: transparent;
-      opacity: 0.6;
+      width: 5%;
+      background-color: transparent !important;
+      opacity: 0.4;
+      border: none !important;
+      box-shadow: none !important;
+      transition: opacity 0.3s ease;
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      opacity: 1 !important;
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       background-size: 100% 100%;
-      width: 40px;
-      height: 40px;
-      filter: brightness(0%);
+      filter: brightness(0%) contrast(100%);
+      width: 50px;
+      height: 50px;
+    }
+
+    .carousel .card img {
+      object-fit: cover;
+      height: 250px;
+    }
+
+    .card {
+      cursor: pointer;
+    }
+
+    h5 {
+      font-weight: bold;
+    }
+
+    @media (max-width: 576px) {
+      .card {
+        margin-bottom: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
-<div id="mobileProductCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
+<section class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-4"></h3>
 
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-      <div class="product-slide">
-        <div class="product-card">
-           <a href="https://korsholm.dk/produkt/zeiss-secacam-3-vildtkamera 
-" class="stretched-link"></a>
-          <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/210715.webp" alt="Produkt 1">
-          <p>Zeiss Secacam 3 Vildtkamera</p>
+    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+      
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="card" onclick="window.location.href='https://jaegeruniverset.melindra.dk/alt-om-bukkejagt-i-maj-grej-tips-og-etik/'">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/gregory-halle-petiot-ZPwRT-QAsHw-unsplash-2-scaled.webp" class="card-img-top" alt="Nyhed 1">
+                <div class="card-body">
+                  <h5 class="card-title">Alt om bukkejagt i maj – grej, tips og etik</h5>
+                  <p class="card-text">Bukkejagten i maj er for mange jægere et af årets absolutte højdepunkter...</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="product-card">
-           <a href="https://korsholm.dk/produkt/ha-det-for-vildt
-" class="stretched-link"></a>
-          <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/198897.webp" alt="Produkt 2">
-          <p>Ha' Det For Vildt</p>
+
+        <!-- SLIDE 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="card" onclick="window.location.href='https://jaegeruniverset.melindra.dk/min-foerste-jagtoplevelse-og-hvilket-grej-jeg-havde-med/'">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/Screenshot-2025-05-11-at-23.11.52-e1747398662669.webp" class="card-img-top" alt="Nyhed 2">
+                <div class="card-body">
+                  <h5 class="card-title">Min første jagtoplevelse og hvilket grej jeg havde med</h5>
+                  <p class="card-text">I samarbejde med Korsholm har vi lavet et spændende interview...</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="product-card">
-           <a href="https://korsholm.dk/produkt/nordik-roe 
-" class="stretched-link"></a>
-          <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/2490201.webp" alt="Produkt 3">
-          <p>Nordik Roe</p>
+
+        <!-- SLIDE 3 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="card" onclick="window.location.href='https://jaegeruniverset.melindra.dk/5-fejl-nye-jaegere-ofte-begaar-og-hvordan-du-undgaar-dem/'">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/jake-forsher-aT0CjGRHbew-unsplash-scaled.webp" class="card-img-top" alt="Nyhed 3">
+                <div class="card-body">
+                  <h5 class="card-title">5 fejl nye jægere ofte begår – og sådan undgår du dem</h5>
+                  <p class="card-text">Som ny jæger åbner jagtverdenen op for mange spændende muligheder...</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- SLIDE 4 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="card" onclick="window.location.href='https://jaegeruniverset.melindra.dk/hvad-skal-du-bruge-til-jagt-paa-raageunger/'">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/aleksey-kuzmichev-jUdUBop64qY-unsplash-scaled.webp" class="card-img-top" alt="Nyhed 4">
+                <div class="card-body">
+                  <h5 class="card-title">Hvad skal du bruge til jagt på rågeunger?</h5>
+                  <p class="card-text">Når det kommer til jagt, er valget af ammunition lige så vigtigt...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 5 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="card" onclick="window.location.href='https://jaegeruniverset.melindra.dk/ammunitionstyper-hvad-skal-du-vaelge-til-din-jagtform/'">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/bennie-bates-x1Mj96G7qrM-unsplash-scaled.webp" class="card-img-top" alt="Nyhed 5">
+                <div class="card-body">
+                  <h5 class="card-title">Ammunitionstyper – hvad skal du vælge til din jagtform?</h5>
+                  <p class="card-text">Når det kommer til jagt, er valget af ammunition lige så vigtigt...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 6 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="card" onclick="window.location.href='https://jaegeruniverset.melindra.dk/de-5-bedste-riffelkikkerter-til-under-3000kr/'">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/cole-miller-d5drj_55oQo-unsplash-2-scaled-e1747402632382.webp" class="card-img-top" alt="Nyhed 6">
+                <div class="card-body">
+                  <h5 class="card-title">De 5 bedste riffelkikkerter til under 3000 kr</h5>
+                  <p class="card-text">En god riffelkikkert er en uundværlig del af enhver jægers udrustning...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 7 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="card" onclick="window.location.href='https://jaegeruniverset.melindra.dk/det-vigtigste-basisudstyr-til-nye-jaegere/'">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/rhett-noonan-799IZNkVopA-unsplash-scaled.webp" class="card-img-top" alt="Nyhed 7">
+                <div class="card-body">
+                  <h5 class="card-title">Det vigtigste basisudstyr til nye jægere</h5>
+                  <p class="card-text">At starte som jæger er både en spændende og lærerig rejse...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 8 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="card" onclick="window.location.href='https://jaegeruniverset.melindra.dk/saadan-vaelger-du-den-rette-jagtjakke-til-danskvejr/'">
+                <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/matthew-maaskant-2JlypxCYVJI-unsplash-1-1-scaled.webp" class="card-img-top" alt="Nyhed 8">
+                <div class="card-body">
+                  <h5 class="card-title">Sådan vælger du den rette jagtjakke til dansk vejr</h5>
+                  <p class="card-text">Det danske vejr er kendt for sin uforudsigelighed...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+      <!-- Pile -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Forrige</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Næste</span>
+      </button>
     </div>
+  </div>
+</section>
 
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <div class="product-slide">
-        <div class="product-card">
-           <a href="https://korsholm.dk/produkt/hikmicro-m15-vildtkamera 
-" class="stretched-link"></a>
-          <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/204947.webp" alt="Produkt 4">
-          <p>Hikmicro M15 Vildtkamera</p>
-        </div>
-        <div class="product-card">
-           <a href="https://korsholm.dk/produkt/kniv-paraforce
-" class="stretched-link"></a>
-          <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/2604801.webp" alt="Produkt 5">
-          <p>Kniv ParaForce</p>
-        </div>
-        <div class="product-card">
-           <a href="https://korsholm.dk/produkt/zeiss-v8-2-8-20x56/roer-uden-kliktaarn 
-" class="stretched-link"></a>
-          <img src="http://jaegeruniverset.melindra.dk/wp-content/uploads/2025/05/170801.webp" alt="Produkt 6">
-          <p>Zeiss V8 2,8-20x56</p>
-        </div>
-      </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
     </div>
 
   </div>
